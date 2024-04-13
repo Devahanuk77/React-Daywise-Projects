@@ -15,7 +15,7 @@ const handleClick =()=>{
   return (
     <>
      <h3>{count}</h3>
-    <button onClick={handleClick}>Counter</button>    
+    <button onClick={onClick}>Counter</button>    
     </>
    
   )
