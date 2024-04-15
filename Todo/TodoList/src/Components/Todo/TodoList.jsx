@@ -30,6 +30,16 @@ const TodoList = () => {
         // console.log(todoAfterDeletion);
         setTodo(todoAfterDeletion);
     }
+
+    const handleEditTodo=(id,newItem)=>{
+        let updatedTodo =todo.map((element)=>{
+            if(element.id ===id){
+                return {...element,title:newItem} // this is updating the title t latest value
+            }
+            return element;
+        });
+        setTodo(updatedTodo);
+    }
    
   return (
     <div>
@@ -39,7 +49,7 @@ const TodoList = () => {
            {/* { todo.map((element,index)=>{
                return <li key={element.id}>{element.title}</li>
             }) } */}
-            <TodoItems todo={todo} handleDelete={handleDelete}/> 
+            <TodoItems todo={todo} handleDelete={handleDelete} handleEditTodo={handleEditTodo}/> 
         </ol>
     </div>
   )
