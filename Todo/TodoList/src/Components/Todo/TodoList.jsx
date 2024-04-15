@@ -4,6 +4,7 @@ import TodoItems from './TodoItems';
 const TodoList = () => {
     const [text , setText] = useState("");
     const [todo, setTodo] = useState([]);
+
     const handleChange =(event)=>{
         // console.log(event.target.value);
         setText(event.target.value); //when this function is called it will update setText ="event.target.value"
@@ -34,7 +35,7 @@ const TodoList = () => {
     const handleEditTodo=(id,newItem)=>{
         let updatedTodo =todo.map((element)=>{
             if(element.id ===id){
-                return {...element,title:newItem} // this is updating the title t latest value
+                return {...element,title:newItem} // this is updating the title to latest value
             }
             return element;
         });
