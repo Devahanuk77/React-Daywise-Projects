@@ -18,9 +18,11 @@ const Deposit = () => {
       return a + 100;
     });
     setAmount((a) => {
+      console.log("a value ",a);
       return a + 100;
     });
     setAmount(a =>{
+      console.log("a value ",a);
       return a+100
     });
     console.log(amount);
