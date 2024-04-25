@@ -43,7 +43,7 @@ const handlePageChange=(val)=>{
         <div style={{ display:"flex"}}>
             <button disabled={page===1} onClick={()=>handlePageChange(-1)}>prev</button>
             <p>{page}</p>
-            <button disabled={page=== Math.ceil(totalCount/10)}onClick={()=>handlePageChange(+1)}>next</button>
+            <button disabled={Math.ceil(totalCount/10)} onClick={()=>handlePageChange(+1)}>next</button>
         </div>
 
         <div>
