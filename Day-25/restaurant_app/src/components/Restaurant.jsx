@@ -36,7 +36,7 @@ const Restaurant = () => {
     <h1>something went wrong....</h1>
   ) : (
     <>
-    <AddRestaurant/>
+    
     {data.map((restaurant)=>{
        return <RestaurantCard key={restaurant.id} {...restaurant}/>
     })}
