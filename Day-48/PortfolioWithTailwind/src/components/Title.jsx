@@ -6,7 +6,7 @@ const Title = () => {
     <div className="bg-purple-100 py-24 px-5">
       <div className="grid md:grid-cols-2 items-center gap-8">
         <article>
-          <h1 className="text-6xl font-bold tracking-wider">I'm Surya</h1>
+          <h1 className="text-6xl font-bold tracking-wider">I'm Devendra</h1>
           <p className="mt-4 text-3xl text-slate-700 capitalize tracking-wide ">
             Front-End Developer
           </p>
